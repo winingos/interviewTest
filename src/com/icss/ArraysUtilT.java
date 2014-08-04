@@ -2,8 +2,10 @@ package com.icss;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -25,7 +27,8 @@ public class ArraysUtilT {
 	 */
 	@Test
 	public  void arrTest(){
-
+		List<String> list=new LinkedList<String>();
+		list.toArray();
 		String[] arrS=new String[]{"a","b","c","d","f"};
 		List<String> listI=Arrays.asList(arrS);
 //		listI.add("ttt");
@@ -76,7 +79,6 @@ public class ArraysUtilT {
 	public static void main(String[] args) {
 		HashSet<Integer> s1 = new HashSet<Integer>(Arrays.asList(1, 2, 3));
 		printSet(s1);
-	 
 		HashSet<String> s2 = new HashSet<String>(Arrays.asList("a", "b", "c"));
 		printSet(s2);
 	}
